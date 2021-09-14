@@ -3,4 +3,4 @@
 ---
 ## list of themes
 
-- **01** [Emmet] (01-emmet)
+- **01** [Emmet](01-emmet/)
