@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <!---->
+        <fieldset>
+            <legend><h2>Personal Data</h2>></legend>
+            <!-------------->
+            <label for="fullname"><h3>FullName:</h3></label>
+            <input type="text" id="fullname" placeholder="Fullname" value="Jeremias Sprinfield" required>
+            <!--------------->
+            <label for="birthdate"><h3>Birthdata</h3></label>
+            <input type="data" id="birthdata" required>
+            <!-------------->
+            <label for="age"><h3>Age:</h3></label>
+            <input type="range" min="1" max="100" oninput="vage.value=this" required>
+            <output id="vage"></output>
+            <!-------------->
+            <label for="photo"><h3>Photo:</h3></label>
+            <input type="file" id="photo">
+            <!-------------->
+            <label for="password"><h3>Password</h3></label>
+            <input type="password" id="password">
+            <!--------------->
+        </fieldset>
+        <!--intitutional Data-->
+        <fieldset>
+            <legend><h2>Institutional Data</h2></legend>
+            <!-------------->
+            <label for="institution"><h3>Institution</h3></label>
+            <select  id="institution" required >
+                <option value="">Select trainig center...</Select></option>
+                <option value="1">Centro de procesos industriales y construccion</option>
+                <option value="2">Automatizacion industriales</option>
+                <option value="3">Comercio y Servicios</option>
+                <option value="4">Formacion cafetera</option>
+            </select>
+            <!-------------->
+            <h3>Trimester:</h3>
+            <label><input type="radio" name="trimester"onclik  >First</label>
+            <br>
+            <label><input type="radio" name="trimester">Second</label>
+            <br>
+            <label><input type="radio" name="trimester">Third</label>
+            <br>
+            <label><input type="radio" name="trimester">Fourth</label>
+            <br>
+            <progress max="100" id="vprog"> </progress>
+            
+            
+            <!-------------->
+            <label for="description"><h3>Program Description</h3></label>
+            <textarea  id="description" cols="40" rows="4" placeholder="program description" required></textarea>   
+        </fieldset>
+
+        <input type="submit" value="send data">
+
+    </form>
+</body>
+</html>
