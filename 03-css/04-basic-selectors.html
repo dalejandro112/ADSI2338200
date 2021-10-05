@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic selectors</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* universal selector */
+        *{
+            border: 1px solid #62a067;
+            padding: 10px;
+        }
+        /* type of label */
+        ul {
+            list-style: none;
+        }
+        li{
+            font-size: 1.4rem;
+        }
+        /* descending */
+        main section ul li {
+            background-color:#d9f7db;
+        }
+        /* class */
+        .upper {
+            text-transform: uppercase;
+        }
+        /* ID */
+        #important {
+            background-color: #900;
+        }
+        /*  */
+        main section ul.gmaes li#important{
+            background-color:#e4afa8 ;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1><a href="./">⬅️</a> Basic selectors</h1>
+    </header>
+    <section>
+        <ul class="games">
+            <li class="upper">Hollow Knigth</li>
+            <li id="important">Metroid Dread</li>
+            <li>super mario</li>
+            <li>fortnite</li>
+            <li>apex</li>
+        </ul>
+        
+    </section>
+</main>
+
+</body>
+</html>
